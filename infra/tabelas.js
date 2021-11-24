@@ -11,11 +11,11 @@ class tabelas {
 
 
         this.conexao.query(sql, erro => {
-                if(erro){
-                    console.log(erro)
-                }else{
-                    console.log('Tabela Atendimentos criada com sucesso')
-                }
+            if (erro) {
+                console.log(erro)
+            } else {
+                console.log('Tabela Atendimentos criada com sucesso')
+            }
 
         })
 
