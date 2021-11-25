@@ -1,7 +1,7 @@
 class tabelas {
     init(conexao) {
         console.log = 'Tabelas foram chamadas'
-
+        this.conexao = conexao
         this.criarAtendimentos()
     }
 
@@ -22,4 +22,4 @@ class tabelas {
     }
 }
 
-module.exports = new tabelas
+module.exports = new tabelas;

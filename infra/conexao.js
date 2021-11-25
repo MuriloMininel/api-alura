@@ -1,14 +1,16 @@
-const mysql = require('mysql')
+require('dotenv').config()
+
+const mysql = require('mysql2');
 
 const conexao = mysql.createConnection({
 
-    host: 'localhost',
-    port: '3306',
-    user: 'root',
-    password: 'admin',
-    database: 'api-alura'
+    host: process.env.HOSTNAME_BD,
+    port: 3306,
+    user: process.env.LOGIN_BD,
+    password: process.env.SENHA_BD,
+    database: process.env.BANCO_DE_DADOS
 
-})
+});
 
-module.exports = conexao
+module.exports = conexao;
 
